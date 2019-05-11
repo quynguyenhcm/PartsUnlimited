@@ -1,0 +1,16 @@
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Aggregator.deps.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Aggregator.runtimeconfig.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Aggregator.runtimeconfig.dev.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Aggregator.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Aggregator.pdb
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.csprojAssemblyReference.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.csproj.CoreCompileInputs.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.RazorAssemblyInfo.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.RazorAssemblyInfo.cs
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.AssemblyInfoInputs.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.AssemblyInfo.cs
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.RazorTargetAssemblyInfo.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.pdb
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/bin/Debug/netcoreapp2.2/Swashbuckle.Core.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Aggregator/obj/Debug/netcoreapp2.2/Aggregator.csproj.CopyComplete

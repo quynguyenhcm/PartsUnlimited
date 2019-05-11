@@ -1,0 +1,16 @@
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Historiane.deps.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Historiane.runtimeconfig.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Historiane.runtimeconfig.dev.json
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Historiane.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Historiane.pdb
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/bin/Debug/netcoreapp2.2/Swashbuckle.Core.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.csprojAssemblyReference.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.csproj.CoreCompileInputs.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.RazorAssemblyInfo.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.RazorAssemblyInfo.cs
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.AssemblyInfoInputs.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.AssemblyInfo.cs
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.RazorTargetAssemblyInfo.cache
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.csproj.CopyComplete
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.dll
+/home/quynguyen/RiderProjects/SimpleWebAPI/Historiane/obj/Debug/netcoreapp2.2/Historiane.pdb
