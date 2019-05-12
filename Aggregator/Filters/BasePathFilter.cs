@@ -6,7 +6,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.Swagger;
 using IDocumentFilter = Swashbuckle.AspNetCore.SwaggerGen.IDocumentFilter;
 
-namespace Historian.Filters
+namespace Aggregator.Filters
 {
     /// <summary>
     /// BasePath Document Filter sets BasePath property of Swagger and removes it from the individual URL paths

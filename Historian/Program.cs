@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Historiane;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,12 +20,10 @@ namespace Historian
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseKestrel(
-         options =>
-         {
-             options.UseConnectionLogging();
-         }
-     )
-     .UseUrls("http://+:5000");
+                .UseStartup<Startup>()
+                .ConfigureKestrel((context, options) =>
+                {
+                    //TODO: Logging
+                }).UseUrls("http://+:5005");
     }
 }

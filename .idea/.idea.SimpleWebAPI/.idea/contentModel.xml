@@ -4,11 +4,19 @@
     <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_SimpleWebAPI.-979955597.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".git/info/exclude" t="IncludeRecursive" />
       <e p="Aggregator" t="IncludeRecursive">
         <e p="Aggregator.csproj" t="IncludeRecursive" />
+        <e p="Attributes" t="Include">
+          <e p="ValidateModelStateAttribute.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="DefaultApi.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Filters" t="Include">
+          <e p="BasePathFilter.cs" t="Include" />
+          <e p="GeneratePathParamsValidationFilter.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="DeviceData.cs" t="Include" />
@@ -18,6 +26,10 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="IStore.cs" t="Include" />
+          <e p="Store.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
@@ -32,12 +44,19 @@
         </e>
         <e p="swagger.yml" t="Include" />
       </e>
-      <e p="Historiane" t="IncludeRecursive">
+      <e p="Historian" t="IncludeRecursive">
+        <e p="Attributes" t="Include">
+          <e p="ValidateModelStateAttribute.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="DefaultApi.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
-        <e p="Historiane.csproj" t="IncludeRecursive" />
+        <e p="Filters" t="Include">
+          <e p="BasePathFilter.cs" t="Include" />
+          <e p="GeneratePathParamsValidationFilter.cs" t="Include" />
+        </e>
+        <e p="Historian.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
           <e p="Error.cs" t="Include" />
         </e>
@@ -45,17 +64,15 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Services" t="Include">
+          <e p="IStore.cs" t="Include" />
+          <e p="Store.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.2" t="Include">
-              <e p="Historiane.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="swagger.yml" t="Include" />
       </e>
       <e p="SimpleWebAPI.sln" t="IncludeFlat" />

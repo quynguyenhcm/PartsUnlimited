@@ -8,7 +8,7 @@ using Swashbuckle.Swagger.Model;
 using IOperationFilter = Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter;
 using Operation = Swashbuckle.Swagger.Operation;
 
-namespace Historian.Filters
+namespace Aggregator.Filters
 {
     /// <summary>
     /// Path Parameter Validation Rules Filter
@@ -26,7 +26,7 @@ namespace Historian.Filters
 
             foreach (var par in pars)
             {
-                var swaggerParam = operation.parameters.SingleOrDefault(p => p. name== par.Name);
+                var swaggerParam = operation.parameters.SingleOrDefault(p => p.name == par.Name);
 
                 var attributes = ((ControllerParameterDescriptor)par.ParameterDescriptor).ParameterInfo.CustomAttributes;
 
@@ -73,7 +73,12 @@ namespace Historian.Filters
                         maxLength = (int)maxLengthAttr.ConstructorArguments[0].Value;
                     }
 
-// Range [Range]
+                    if (swaggerParam is NonBodyParameter)
+                    {
+                       
+                    }
+
+                    // Range [Range]
                     var rangeAttr = attributes.FirstOrDefault(p => p.AttributeType == typeof(RangeAttribute));
                     if (rangeAttr != null)
                     {
@@ -82,6 +87,8 @@ namespace Historian.Filters
 
                         if (swaggerParam is NonBodyParameter)
                         {
+                           // ((NonBodyParameter)swaggerParam).Minimum = rangeMin;
+                           // ((NonBodyParameter)swaggerParam).Maximum = rangeMax;
                         }
                     }
                 }

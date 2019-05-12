@@ -21,7 +21,9 @@ using Microsoft.Extensions.Primitives;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
+using Aggregator.Models;
 using IO.Swagger.Models;
+using ServiceStore;
 using Swashbuckle.Swagger.Annotations;
 
 namespace Aggregator.Controllers
@@ -30,7 +32,15 @@ namespace Aggregator.Controllers
     /// 
     /// </summary>
     public class DefaultApiController : Controller
-    { 
+    {
+        private readonly IStore store;
+        private readonly ILogger logger;
+
+        public DefaultApiController(IStore store, ILogger<DefaultApiController> logger)
+        {
+            this.store = store;
+            this.logger = logger;
+        }
         /// <summary>
         /// Add data generated from a device to the aggregator
         /// </summary>
