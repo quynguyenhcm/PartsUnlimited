@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Aggregator.ServiceClients.Api;
+using Aggregator.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,7 +13,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using ServiceStore;
 
 namespace Aggregator
 {
@@ -49,12 +50,15 @@ namespace Aggregator
                     }
                 });
             });
-            services.AddSingleton(new Store());
+            services.AddSingleton<IStore> (new Store());
+            services.AddSingleton<ITemperatureHistorian>(new TemperatureHistorian());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory log)
         {
+            log.AddConsole(Configuration.GetSection("Logging"));
+            log.AddDebug();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -68,13 +72,17 @@ namespace Aggregator
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            
-             app.UseSwagger(c =>
-             {
-                 //c.RouteTemplate = "api-docs/{documentName}/swagger.json";
-             });
+  
+            app.UseSwagger(
+                c =>
+                {
+                    //c.RouteTemplate = "api-docs/{documentName}/swagger.json"; 
+                    
+                }
+            );
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "V1 Docs"); });
             app.UseHttpsRedirection();
-        }
+          
+        } 
     }
 }

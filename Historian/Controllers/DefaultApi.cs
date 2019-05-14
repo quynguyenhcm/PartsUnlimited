@@ -35,13 +35,13 @@ namespace Historian.Controllers
     /// </summary>
     public class DefaultApiController : Controller
     { 
-        private readonly IStore store;
-        private readonly ILogger logger;
+        private readonly IStore _store;
+        private readonly ILogger _logger;
 
         public DefaultApiController(IStore store, ILogger<DefaultApiController> logger)
         {
-            this.store = store;
-            this.logger = logger;
+            this._store = store;
+            this._logger = logger;
         }
         
         /// <summary>
@@ -57,7 +57,7 @@ namespace Historian.Controllers
         /// <response code="500">An unexpected error occurred.</response>
         [HttpPost]
         [Route("/v1/deviceData/{deviceId}")]
-      [ValidateModelState]
+        [ValidateModelState]
         [SwaggerOperation("AddDeviceData")]
         [SwaggerResponse(statusCode: 201, type: typeof(float?), description: "Data added successfully.")]
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Invalid input parameter.")]
@@ -67,26 +67,26 @@ namespace Historian.Controllers
             try
             {
                 var key = $"{deviceId};{datapointId}";
-                if (!this.store.Exists(key) && value.HasValue)
+                if (!this._store.Exists(key) && value.HasValue)
                 {
-                    this.store.Add(key, value.Value);
-                    this.logger.LogInformation($"Added {value.Value} for {key} to the store at {timestamp}");
+                    this._store.Add(key, value.Value);
+                    this._logger.LogInformation($"Added {value.Value} for {key} to the store at {timestamp}");
                 }
 
                 if (!value.HasValue)
                 {
-                    this.logger.LogError(($"No value found for {key}"));
+                    this._logger.LogError(($"No value found for {key}"));
                     return BadRequest(($"No data value for device: {deviceId} and datapoint {datapointId}"));
                 }
 
-             var average  = this.store.GetAll().Where(i => i.Key.StartsWith(deviceId)).Average(v => v.Value);
+             var average  = this._store.GetAll().Where(i => i.Key.StartsWith(deviceId)).Average(v => v.Value);
 
-                this.logger.LogInformation($"Returning {average}.");
+                this._logger.LogInformation($"Returning {average}.");
                 return Created("", average);
             }
             catch (Exception e)
             {
-                logger.LogError(e.StackTrace);
+                _logger.LogError(e.StackTrace);
             }
 
             return UnprocessableEntity();

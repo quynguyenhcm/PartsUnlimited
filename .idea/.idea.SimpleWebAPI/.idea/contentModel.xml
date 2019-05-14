@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_SimpleWebAPI.-979955597.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_SimpleWebAPI.-979955597.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p=".git/info/exclude" t="IncludeRecursive" />
       <e p="Aggregator" t="IncludeRecursive">
@@ -22,10 +22,31 @@
           <e p="DeviceData.cs" t="Include" />
           <e p="DeviceDataPoints.cs" t="Include" />
           <e p="Error.cs" t="Include" />
+          <e p="ServiceOptions.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="ServiceClients" t="Include">
+          <e p="Api" t="Include">
+            <e p="ITemperatureHistorian.cs" t="Include" />
+            <e p="TemperatureHistorian.cs" t="Include" />
+          </e>
+          <e p="Client" t="Include">
+            <e p="ApiClient.cs" t="Include" />
+            <e p="ApiException.cs" t="Include" />
+            <e p="ApiResponse.cs" t="Include" />
+            <e p="Configuration.cs" t="Include" />
+            <e p="ExceptionFactory.cs" t="Include" />
+            <e p="GlobalConfiguration.cs" t="Include" />
+            <e p="IApiAccessor.cs" t="Include" />
+            <e p="IReadableConfiguration.cs" t="Include" />
+            <e p="SwaggerDateConverter.cs" t="Include" />
+          </e>
+          <e p="Model" t="Include">
+            <e p="Error.cs" t="Include" />
+          </e>
         </e>
         <e p="Services" t="Include">
           <e p="IStore.cs" t="Include" />
@@ -52,6 +73,7 @@
           <e p="DefaultApi.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="Filters" t="Include">
           <e p="BasePathFilter.cs" t="Include" />
           <e p="GeneratePathParamsValidationFilter.cs" t="Include" />
@@ -72,7 +94,29 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="Historian.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="publish" t="Include">
+          <e p="Historian.deps.json" t="Include" />
+          <e p="Historian.dll" t="Include" />
+          <e p="Historian.pdb" t="Include" />
+          <e p="Historian.runtimeconfig.json" t="Include" />
+          <e p="Microsoft.OpenApi.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.Swagger.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerGen.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerUI.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.dll" t="Include" />
+          <e p="Swashbuckle.Core.dll" t="Include" />
+          <e p="Swashbuckle.Swagger.dll" t="Include" />
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="web.config" t="Include" />
+        </e>
         <e p="swagger.yml" t="Include" />
       </e>
       <e p="SimpleWebAPI.sln" t="IncludeFlat" />

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ServiceStore
+namespace Aggregator.Services
 {
     public class Store : IStore
     {
